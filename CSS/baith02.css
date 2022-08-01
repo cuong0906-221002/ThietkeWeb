@@ -1,0 +1,185 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+header{
+    align-items: center;/*Nam giua theo chieu doc*/
+    display: flex;/*nam Ngang*/
+    background-color: lightblue;
+    position: relative; /*chinh position cho avatar*/
+    /*padding: 5px;*/
+}
+header h1{
+    color: lightcoral;
+    text-shadow: 2px 3px 3px red;
+
+}
+.avatar>img{
+    width: 10%;
+    height: 20%;
+    right: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+div.nav{
+    margin-left: auto;/*day menu qua trai*/
+    margin-top: auto;
+}
+ul.menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+ul.menu>li{
+    margin-right: 3px;
+}
+ul.menu>li>a{
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    background: linear-gradient(darkblue, lightblue);
+    border-radius: 15px 15px 0 0; /*bo cac goc cua menu*/
+}
+section.works {
+    background-color: blue;
+}
+div.ctrl{
+    text-align: center;
+    padding: 15px;
+}
+input{
+    padding: 10px;
+}
+input[type=text],input[type=date]{
+    width: 30%;
+    color: darkblue;
+}
+input[type=button]{
+    background-color: darkblue;
+    color: white;
+    border: 1px solid white;
+    width: 80px;
+}
+.col5{
+    width: 5%;
+}
+.col5>img{
+    width: 100%;
+    height: 100%;
+}
+.col15{
+    width: 15%;
+}
+.col70{
+    width: 70%;
+}
+.col10{
+    width: 10%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+div.item{
+    background-color: darkblue;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.active{
+    background-color: darkred !important;
+}
+body{
+    background: linear-gradient(blue, lightblue, rgb(147, 147, 240));
+}
+section.ads>div{
+    background: linear-gradient(darkblue, blue);
+    border: 2px solid gold;
+    width: 12%;
+    text-align: center;
+    position: fixed;
+    padding: 10% 0;
+}
+section.ads>div:first-child{
+    left:1%;
+}
+section.ads>div:last-child{
+    right: 1%;
+}
+footer{
+    background-color: lightblue;
+    padding: 2em 0;   
+    overflow: hidden;
+}
+footer>span{
+    animation: dichuyen 20s infinite;
+    position: relative;
+}
+@keyframes dichuyen{
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+h1.subject{
+    border-bottom: 5px solid darkblue;
+    
+}
+h1.subject>span{
+    background-color: darkblue;
+    display: block;
+    width: 30%;
+    padding: 10px;
+    font-size: 2em;
+    position: relative;
+}
+h1.subject>span::after{
+    content: " ";
+    border-width: 37.5px;
+    border-style: solid;
+    border-color: transparent transparent darkblue darkblue;
+    position: absolute;
+    left: 100%;
+    bottom: 0px;
+}
+div.figures{
+    display: flex;
+    flex-wrap: wrap;
+}
+div.figures>figure{
+    width:25%;
+    margin: 0;
+}
+div.figures>figure img{
+    width: 100%;
+}
+ul.user-info{
+    background-color: darkred;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 14%;
+    display: none;
+}
+ul.user-info::after{
+    content: " ";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent darkred transparent;
+    position: absolute;
+    bottom: 100%;
+    right: 3%;
+
+}
+a.avatar:hover + ul.user-info{
+    display: block;
+}
